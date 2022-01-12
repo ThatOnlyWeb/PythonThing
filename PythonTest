@@ -1,0 +1,56 @@
+from threading import Timer
+def spacing():
+    print("   ")
+def print_first():
+    print("Loading.")
+def print_second():
+    print("Loading..")
+def print_third():
+    print("Loading...")
+def finished_loading():
+    print("finished loading!")
+def start_execute():
+    print("executing script")
+def finish_loading_print():
+    print("Executed Script succsessfully!")
+def start_menu():
+    print("Now loading Menu")
+    print("Pleae wait a second")
+def spacing_2():
+    for x in range(50):
+        spacing()
+def show_apple():
+    print("  ,--./,-.")
+    print(" /        \ ")
+    print("|          |")
+    print(" \        / ")
+    print("  `._,._,'")
+
+    
+t = Timer(1, spacing)  
+t.start()
+t = Timer(2, print_first)  
+t.start()
+t = Timer(3, print_second)  
+t.start()
+t = Timer(4, print_third)  
+t.start()
+t = Timer(5, print_first)  
+t.start()
+t = Timer(6, print_second)  
+t.start()
+t = Timer(7, print_third)  
+t.start()
+t = Timer(8, finished_loading)  
+t.start()
+t = Timer(9, start_execute)  
+t.start()
+t = Timer(11, finish_loading_print)  
+t.start()
+t = Timer(13, start_menu)  
+t.start()
+t = Timer(15, spacing_2)  
+t.start()
+t = Timer(16, show_apple)  
+t.start()
+
